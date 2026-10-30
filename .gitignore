@@ -1,0 +1,35 @@
+# Python cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Python virtual environments
+venv/
+**/venv/
+.venv/
+**/.venv/
+
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated OpenFDA files
+data/master/openfda_cache.json
+data/master/openfda_enrich_progress.json
+
+# Testing and editor cache
+.pytest_cache/
+.vscode/

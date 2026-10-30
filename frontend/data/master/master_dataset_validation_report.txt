@@ -1,0 +1,121 @@
+=================================================================
+SafeMed Master Dataset Validation Report
+Generated: 2026-09-23T06:10:12.983312+00:00
+=================================================================
+
+File : C:\Users\Sohan Bhangare\Desktop\SafeMed\data\master\safemed_drug_master.csv
+Rows : 4,138
+Cols : 55
+
+── 1. BASIC CHECKS ──────────────────────────────────
+  [OK]    Dataset has 4,138 records.
+  [OK]    Column 'drug_name' present.
+  [OK]    Column 'drug_name_normalized' present.
+  [OK]    Column 'information_available' present.
+
+── 2. DRUG NAME CHECKS ──────────────────────────────
+  [OK]    No empty drug_name values.
+  [OK]    No duplicate drug_name_normalized values.
+
+── 3. GENERIC NAME CHECKS ───────────────────────────
+  [WARN]  1269 drugs (30.7%) have no generic_name.
+
+── 4. SIDE EFFECTS CHECKS ───────────────────────────
+  [OK]    2788 drugs have side-effect data (67.4%).
+  [OK]    1350 drugs have no side-effect data (32.6%).
+
+── 5. DRUG CLASS CHECKS ─────────────────────────────
+  [OK]    1308 drugs have no drug_classes entry (31.6%).
+
+── 6. MEDICAL CONDITION CHECKS ──────────────────────
+  [WARN]  1226 drugs have no associated medical_conditions.
+  [OK]    No duplicate conditions within individual drug records.
+
+── 7. COMPLETENESS SCORE CHECKS ─────────────────────
+  [OK]    All completeness scores are in valid range [0–100].
+  [OK]    Average completeness: 18.3%
+  [OK]    Min: 0.0%, Max: 30.4%
+
+── 8. REGULATORY FIELD CHECKS ───────────────────────
+  [OK]    rx_otc distribution: {'Rx': 1984, '': 1227, 'Rx/OTC': 600, 'OTC': 327}
+  [OK]    pregnancy_category distribution: {'': 1455, 'C': 1371, 'B': 503, 'N': 435, 'D': 227, 'X': 129, 'A': 18}
+
+── 9. INFORMATION AVAILABLE FLAG ────────────────────
+  [OK]    information_available values: {'True': 2912, 'False': 1226}
+
+── 10. FABRICATION GUARD CHECKS ─────────────────────
+  [OK]    'mechanism_of_action' correctly empty — not fabricated.
+  [OK]    'pharmacological_effect' correctly empty — not fabricated.
+  [OK]    'dosage_forms' correctly empty — not fabricated.
+  [OK]    'routes_of_administration' correctly empty — not fabricated.
+  [OK]    'contraindications' correctly empty — not fabricated.
+  [OK]    'warnings' correctly empty — not fabricated.
+  [OK]    'precautions' correctly empty — not fabricated.
+  [OK]    'pregnancy_information' correctly empty — not fabricated.
+  [OK]    'breastfeeding_information' correctly empty — not fabricated.
+  [OK]    'pediatric_information' correctly empty — not fabricated.
+  [OK]    'geriatric_information' correctly empty — not fabricated.
+  [OK]    'renal_information' correctly empty — not fabricated.
+  [OK]    'hepatic_information' correctly empty — not fabricated.
+  [OK]    'storage_information' correctly empty — not fabricated.
+  [OK]    'missed_dose_information' correctly empty — not fabricated.
+  [OK]    'drug_food_interactions' correctly empty — not fabricated.
+  [OK]    'drug_condition_interactions' correctly empty — not fabricated.
+  [OK]    'serious_side_effects' correctly empty — not fabricated.
+  [OK]    'common_side_effects' correctly empty — not fabricated.
+  [OK]    'rare_side_effects' correctly empty — not fabricated.
+
+── 11. SOURCES TABLE CHECKS ─────────────────────────
+  [OK]    Sources table: 36,061 records, 4,138 unique drugs covered.
+
+── 12. URL AND SOURCE QUALITY ───────────────────────
+  [OK]    No malformed source_urls values.
+  [WARN]  752 generic names appear on more than one drug record (may be legitimate brand/alias overlap).
+  [OK]    No duplicate side-effect fragments within individual drug records.
+  [WARN]  6 drugs have unusually long side_effects text (>20,000 chars).
+  [WARN]  34 drugs have unusually long condition descriptions (>30,000 chars).
+
+=================================================================
+VALIDATION SUMMARY
+=================================================================
+  Total records   : 4,138
+  Total columns   : 55
+  Errors found    : 0
+  Warnings found  : 5
+
+  VALIDATION STATUS: PASSED
+
+  Errors:
+    None
+
+  Warnings:
+    • 1269 drugs (30.7%) have no generic_name.
+    • 1226 drugs have no associated medical_conditions.
+    • 752 generic names appear on more than one drug record (may be legitimate brand/alias overlap).
+    • 6 drugs have unusually long side_effects text (>20,000 chars).
+    • 34 drugs have unusually long condition descriptions (>30,000 chars).
+
+  Field completeness (informational fields):
+    generic_name                          :  2869/ 4138  ( 69.3%)
+    brand_names                           :  1701/ 4138  ( 41.1%)
+    drug_classes                          :  2830/ 4138  ( 68.4%)
+    medical_conditions                    :  2912/ 4138  ( 70.4%)
+    medical_condition_description         :  2912/ 4138  ( 70.4%)
+    side_effects                          :  2788/ 4138  ( 67.4%)
+    drug_alcohol_interactions             :  1375/ 4138  ( 33.2%)
+    mechanism_of_action                   :     0/ 4138  (  0.0%)
+    pharmacological_effect                :     0/ 4138  (  0.0%)
+    dosage_forms                          :     0/ 4138  (  0.0%)
+    routes_of_administration              :     0/ 4138  (  0.0%)
+    contraindications                     :     0/ 4138  (  0.0%)
+    warnings                              :     0/ 4138  (  0.0%)
+    precautions                           :     0/ 4138  (  0.0%)
+    pregnancy_information                 :     0/ 4138  (  0.0%)
+    breastfeeding_information             :     0/ 4138  (  0.0%)
+    pediatric_information                 :     0/ 4138  (  0.0%)
+    geriatric_information                 :     0/ 4138  (  0.0%)
+    renal_information                     :     0/ 4138  (  0.0%)
+    hepatic_information                   :     0/ 4138  (  0.0%)
+    storage_information                   :     0/ 4138  (  0.0%)
+    drug_food_interactions                :     0/ 4138  (  0.0%)
+    drug_condition_interactions           :     0/ 4138  (  0.0%)

@@ -1,0 +1,5 @@
+drug_1_length
+drug_2_length
+drug_1_word_count
+drug_2_word_count
+same_first_letter

@@ -1,0 +1,9 @@
+drug_1_length
+drug_2_length
+description_length
+contains_increase
+contains_decrease
+contains_risk
+contains_concentration
+contains_effect
+contains_reduce

@@ -1,0 +1,124 @@
+{
+  "Logistic Regression": {
+    "accuracy": 0.8094,
+    "precision": 0.7828,
+    "recall": 0.8563,
+    "f1_score": 0.8179,
+    "roc_auc": 0.8875,
+    "confusion_matrix": {
+      "true_negative": 5337,
+      "false_positive": 1663,
+      "false_negative": 1006,
+      "true_positive": 5994,
+      "matrix": [
+        [
+          5337,
+          1663
+        ],
+        [
+          1006,
+          5994
+        ]
+      ]
+    },
+    "feature_metrics": {
+      "log_deg_1": {
+        "coefficient": -1.0859,
+        "odds_ratio": 0.3376
+      },
+      "log_deg_2": {
+        "coefficient": -0.9796,
+        "odds_ratio": 0.3755
+      },
+      "deg_product": {
+        "coefficient": 4.1685,
+        "odds_ratio": 64.6156
+      },
+      "deg_diff": {
+        "coefficient": 0.4448,
+        "odds_ratio": 1.5601
+      },
+      "side_effect_jaccard": {
+        "coefficient": 0.0832,
+        "odds_ratio": 1.0868
+      },
+      "shared_classes_count": {
+        "coefficient": 0.1333,
+        "odds_ratio": 1.1426
+      },
+      "both_rx": {
+        "coefficient": -0.0653,
+        "odds_ratio": 0.9368
+      },
+      "csa_controlled_substance": {
+        "coefficient": -0.0377,
+        "odds_ratio": 0.963
+      },
+      "high_risk_pair": {
+        "coefficient": 0.6468,
+        "odds_ratio": 1.9095
+      },
+      "_intercept": -0.2734
+    },
+    "sample_counts": {
+      "train_size": 56000,
+      "test_size": 14000
+    }
+  },
+  "Decision Tree": {
+    "accuracy": 0.8124,
+    "precision": 0.7812,
+    "recall": 0.8677,
+    "f1_score": 0.8222,
+    "roc_auc": 0.8905,
+    "confusion_matrix": {
+      "true_negative": 5299,
+      "false_positive": 1701,
+      "false_negative": 926,
+      "true_positive": 6074,
+      "matrix": [
+        [
+          5299,
+          1701
+        ],
+        [
+          926,
+          6074
+        ]
+      ]
+    },
+    "feature_metrics": {
+      "log_deg_1": {
+        "importance": 0.0086
+      },
+      "log_deg_2": {
+        "importance": 0.0217
+      },
+      "deg_product": {
+        "importance": 0.9628
+      },
+      "deg_diff": {
+        "importance": 0.005
+      },
+      "side_effect_jaccard": {
+        "importance": 0.0009
+      },
+      "shared_classes_count": {
+        "importance": 0.0
+      },
+      "both_rx": {
+        "importance": 0.0
+      },
+      "csa_controlled_substance": {
+        "importance": 0.0009
+      },
+      "high_risk_pair": {
+        "importance": 0.0
+      }
+    },
+    "sample_counts": {
+      "train_size": 56000,
+      "test_size": 14000
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "dataset_name": "SafeMed Master Drug Dataset",
+  "version": "1.1.0",
+  "generated_at": "2026-09-23T06:10:10.256543+00:00",
+  "source_datasets": [
+    "data/cleaned/drugs_cleaned.csv",
+    "data/cleaned/drug_interactions_cleaned.csv"
+  ],
+  "statistics": {
+    "total_unique_drugs": 4138,
+    "total_drug_classes": 274,
+    "total_conditions": 47,
+    "drugs_with_generic_name": 2869,
+    "drugs_with_brand_names": 1701,
+    "drugs_with_side_effects": 2788,
+    "drugs_with_drug_classes": 2830,
+    "drugs_with_mechanism": 0,
+    "drugs_with_warnings": 0,
+    "drugs_with_contraindications": 0,
+    "drugs_with_pregnancy_information": 0,
+    "drugs_with_pregnancy_category": 2683,
+    "drugs_with_alcohol_information": 1375,
+    "drugs_with_related_drugs": 1460,
+    "drugs_in_ddi_dataset": 1701,
+    "average_completeness_score": 18.3,
+    "min_completeness_score": 0.0,
+    "max_completeness_score": 30.4
+  },
+  "field_completeness": {
+    "generic_name": {
+      "filled": 2869,
+      "total": 4138,
+      "percent": 69.3
+    },
+    "brand_names": {
+      "filled": 1701,
+      "total": 4138,
+      "percent": 41.1
+    },
+    "drug_classes": {
+      "filled": 2830,
+      "total": 4138,
+      "percent": 68.4
+    },
+    "medical_conditions": {
+      "filled": 2912,
+      "total": 4138,
+      "percent": 70.4
+    },
+    "medical_condition_description": {
+      "filled": 2912,
+      "total": 4138,
+      "percent": 70.4
+    },
+    "side_effects": {
+      "filled": 2788,
+      "total": 4138,
+      "percent": 67.4
+    },
+    "drug_alcohol_interactions": {
+      "filled": 1375,
+      "total": 4138,
+      "percent": 33.2
+    },
+    "mechanism_of_action": {
+      "filled": 0,
+      "total": 4138,
+      "percent": 0.0
+    },
+    "pharmacological_effect": {
+      "filled": 0,
+      "total": 4138,
+      "percent": 0.0
+    },
+    "dosage_forms": {
+      "filled": 0,
+      "total": 4138,
+      "percent": 0.0
+    },
+    "routes_of_administration": {
+      "filled": 0,
+      "total": 4138,
+      "percent": 0.0
+    },
+    "contraindications": {
+      "filled": 0,
+      "total": 4138,
+      "percent": 0.0
+    },
+    "warnings": {
+      "filled": 0,
+      "total": 4138,
+      "percent": 0.0
+    },
+    "precautions": {
+      "filled": 0,
+      "total": 4138,
+      "percent": 0.0
+    },
+    "pregnancy_information": {
+      "filled": 0,
+      "total": 4138,
+      "percent": 0.0
+    },
+    "breastfeeding_information": {
+      "filled": 0,
+      "total": 4138,
+      "percent": 0.0
+    },
+    "pediatric_information": {
+      "filled": 0,
+      "total": 4138,
+      "percent": 0.0
+    },
+    "geriatric_information": {
+      "filled": 0,
+      "total": 4138,
+      "percent": 0.0
+    },
+    "renal_information": {
+      "filled": 0,
+      "total": 4138,
+      "percent": 0.0
+    },
+    "hepatic_information": {
+      "filled": 0,
+      "total": 4138,
+      "percent": 0.0
+    },
+    "storage_information": {
+      "filled": 0,
+      "total": 4138,
+      "percent": 0.0
+    },
+    "drug_food_interactions": {
+      "filled": 0,
+      "total": 4138,
+      "percent": 0.0
+    },
+    "drug_condition_interactions": {
+      "filled": 0,
+      "total": 4138,
+      "percent": 0.0
+    }
+  },
+  "note": "Statistics describe data availability only. They are not clinical quality or safety indicators."
+}
